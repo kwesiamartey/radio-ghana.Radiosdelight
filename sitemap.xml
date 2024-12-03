@@ -3,7 +3,7 @@
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<!-- Home Page -->
    <url>
-      <loc>https://www.radiosdelight.com/</loc>
+      <loc>https://radio-ghana.radiosdelight.com/</loc>
       <lastmod>2024-11-21</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
    <!-- About Page -->
    <url>
-      <loc>https://www.radiosdelight.com/about-us.html</loc>
+      <loc>https://radio-ghana.radiosdelight.com/about-us.html</loc>
       <lastmod>2024-11-01</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
@@ -19,7 +19,7 @@
 
    <!-- Contact Page -->
    <url>
-      <loc>https://www.radiosdelight.com/contact-us.html</loc>
+      <loc>https://radio-ghana.radiosdelight.com/contact-us.html</loc>
       <lastmod>2024-11-15</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -27,7 +27,7 @@
 
    <!-- Privacy Policy Page -->
    <url>
-      <loc>https://www.radiosdelight.com/privacy.html</loc>
+      <loc>https://radio-ghana.radiosdelight.com/privacy.html</loc>
       <lastmod>2024-10-30</lastmod>
       <changefreq>yearly</changefreq>
       <priority>0.5</priority>
@@ -36,7 +36,7 @@
 
    <!-- Custom 404 Page -->
    <url>
-      <loc>https://www.radiosdelight.com/404.html</loc>
+      <loc>https://radio-ghana.radiosdelight.com/404.html</loc>
       <lastmod>2024-11-20</lastmod>
       <changefreq>never</changefreq>
       <priority>0.1</priority>
