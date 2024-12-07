@@ -605,11 +605,15 @@ function initAudioPlayer(url, image, stationName, bit, country) {
                 }
             } else {
                 // Use native HTML5 audio for other formats
-                audio.addEventListener('canplay', () => {
-                    showSpinner(false); // Hide the spinner when audio is ready
-                });
-                const stationDetails = `${stationName} (${country}) (Web)`;
-                     sendEmailNotification(stationDetails, url, 'success')
+                createAudioPlayer(url)
+                 showSpinner(false);
+                 sendEmailNotification(stationDetails, url, 'success');
+             
+               // audio.addEventListener('canplay', () => {
+               //     showSpinner(false); // Hide the spinner when audio is ready
+                //});
+               // const stationDetails = `${stationName} (${country}) (Web)`;
+                //     sendEmailNotification(stationDetails, url, 'success')
             }
 
             // Handle error events for unsupported formats
@@ -621,6 +625,28 @@ function initAudioPlayer(url, image, stationName, bit, country) {
             });
 
 }
+
+function createAudioPlayer(audioUrls) {
+    // Create an audio element
+    audio.controls = false; // Display playback controls
+    audio.autoplay = true; // Automatically play audio
+
+    // Add sources to the audio element
+    audioUrls.forEach(({ url, type }) => {
+        const source = document.createElement("source");
+        source.src = url;
+        source.type = type;
+        audioPlayer.appendChild(source);
+    });
+
+    // Append the audio player to the document body or a specific container
+    document.body.appendChild(audio);
+
+    return audio;
+}
+
+
+
 
    // Show or hide the spinner
 function showSpinner(show) {
