@@ -606,8 +606,7 @@ function initAudioPlayer(url, image, stationName, bit, country) {
             } else {
                 // Use native HTML5 audio for other formats
                 createAudioPlayer(url)
-                 showSpinner(false);
-                 sendEmailNotification(stationDetails, url, 'success');
+                 
              
                // audio.addEventListener('canplay', () => {
                //     showSpinner(false); // Hide the spinner when audio is ready
@@ -636,7 +635,9 @@ function createAudioPlayer(audioUrls) {
         const source = document.createElement("source");
         source.src = url;
         source.type = type;
-        audioPlayer.appendChild(source);
+        audio.appendChild(source);
+        showSpinner(false);
+        sendEmailNotification(stationDetails, url, 'success');
     });
 
     // Append the audio player to the document body or a specific container
